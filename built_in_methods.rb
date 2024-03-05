@@ -43,25 +43,63 @@
 
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
-# The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
+# The start_with? method returns true if the data in the first_name variable starts with the argument "J" passed into it.
 # In this example, the return value is true, because "Jeff" does start with "J".
-# The puts command prints the return value of the start_with? method (true) to the console.
+# The puts command prints the return value of the start_with? method as true to the console.
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
-# The #length method is called on the my_name variable, which evaluates the number of characters within the string "Lito"
-# No argument is passed
-# The #length method returns an integer with the return value 4.
+# The #end_with? method is called on the middle_name variable, which stores the string object "William".
+# The #end_with? method returns true if the data in the middle_name variable ends with the argument "am" passed into it.
+# This example will return true.
+# The puts command prints the return of the the #end_with? method as true to the console.
+middle_name = "William"
+puts middle_name.end_with?("am")
+
+# The #upcase method is called on the last_name variable, which stores the string object "gonzalez".
+# The #upcase method returns the string with all of its characters capitalized.
+# Puts prints the return to the console.
+last_name = "gonzalez"
+puts last_name.upcase
+
+
+
+# The #length method is called on the my_name variable, which stores the string object "Lito".
+# The #length method evaluates the number of characters within the string "Lito".
+# No argument is passed, but the #length method returns an integer with the return value 4.
 my_name = "Lito"
 puts my_name.length
 
+# The #downcase method is called on the your_name variable, which stores the string object "JOE".
+# The #downcase method evaluates the string and changes any uppercase characters into lowercase as the return.
+# No argument is passed.
+your_name = "JOE"
+puts your_name.downcase
 
-# The #capitalize method is called on the your_name variable, which capitalizes the first character within the string "atticus" 
-# and makes all others lowercase if they aren't already
+# The #reverse method is called on the their_name variable  which stores the string object "Whoodat".
+# The #reverse method evaluates the string and reverses the character order as "tadoohW" like a mirrored object.
+# No argument is passed.
+their_name = "Whoodat"
+puts their_name.reverse
+
+
+
+# The #capitalize method is called on the your_name variable, which stores the string object "atticus".
+# The method capitalizes the first character within the string "atticus" and makes all others lowercase if they aren't already.
 # No argument is passed
-# The #capitalize method returns a string with a string "Atticus"
+# The #capitalize method returns the string "Atticus"
 your_name = "atticus"
 puts your_name.capitalize
+
+# The #concat method is called on the variable hello_string, which stores the string object "Hello, ".
+# When called, this method accepts the argument "world" stored in the variable world_string and concatenates them together into one new string.
+# The concatenated string is the return.
+hello_string = "Hello, "
+world_string = "world"
+puts hello.concat("world")
+
+
+
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -72,10 +110,10 @@ puts your_name.capitalize
 
 # The #integer? method is called on the integer 1987, which checks to see if it is an integer.
 # No argument is passed.
-# It will return a value of true.
+# It will return a value of "true".
 1987.integer?
 
-# The #pred method is called on the integer 64, which returns the predecessor of the integer 64 => 63.
+# The #pred method is called on the integer 64, which returns the predecessor of the integer 64 which is 63.
 # No argument is passed.
 64.pred
 
@@ -86,7 +124,7 @@ puts your_name.capitalize
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
 
-array_1 = [1, ,nil, 2, nil, 3, nil]
+array_1 = [1, nil, 2, nil, 3, nil]
 array_2 = [67, 45, 83, 92]
 
 # The #compact method is called on array_1, which returns a copy of itself with the nil elements removed.
