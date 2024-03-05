@@ -61,7 +61,7 @@ puts female_greeting
 # What is the return value of your method?
     # "What's up, Sean William Scott? How are you?" & "What's up, Sarah Jessica Parker? How are you?"
 # How many arguments did you pass your method?
-     # 1 argument gets passed 2 separate times - one for each new variable I declared.
+     # 3 argument get passed - one for (first, middle, last) names.
 # What data type was your argument(s)?
     # Strings
 
@@ -89,21 +89,21 @@ puts "60% of the time #{big_result} is bigger than #{small_result}, every time."
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
+
+# ARTEMY'S SOLUTION EXAMPLE --> I got about 80% of the way there...
+# I'll add this here for future reference.
+# ===============================================================================
 def check_stock(amount, type)
-
-    if amount = 4
+    if amount >= 4                      # because if we have 6 of an item, that'd still make it stocked!
         puts "#{type} is stocked"
-    elsif amount = 3
+    elsif amount >= 1 && amount <= 3    # because 1, 2, and 3 should all trigger the same response
         puts "#{type} - running LOW"
-    elsif amount = 0
+    else
         puts "#{type} OUT of stock!"
-    else amount = 1
-        puts "#{type} - running LOW"
     end
-
 end
 
-    check_stock(4, "Coffee");
+check_stock(4, "Coffee");
 # => "Coffee is stocked"
 
 check_stock(3, "Tortillas");
