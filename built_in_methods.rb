@@ -111,11 +111,13 @@ puts hello.concat("world")
 # The #integer? method is called on the integer 1987, which checks to see if it is an integer.
 # No argument is passed.
 # It will return a value of "true".
-1987.integer?
+check_num_1 = 1987
+check_num_1.integer?
 
 # The #pred method is called on the integer 64, which returns the predecessor of the integer 64 which is 63.
 # No argument is passed.
-64.pred
+check_num_2 = 64
+check_num_2.pred
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
