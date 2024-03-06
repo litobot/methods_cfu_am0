@@ -96,7 +96,7 @@ puts your_name.capitalize
 # The concatenated string is the return.
 hello_string = "Hello, "
 world_string = "world"
-puts hello.concat("world")
+puts hello_string.concat("world")
 
 
 
@@ -113,15 +113,16 @@ puts hello.concat("world")
 # No argument is passed.
 # It will return a value of "true".
 check_num_1 = 1987
-check_num_1.integer?  # Sorry, Artemy.  I was just having a total brain fart on this stuff.
+result_a = check_num_1.integer?  # Sorry, Artemy.  I was just having a total brain fart on this stuff.
+puts result_a
 
 # The #pred method is called on the variable check_num_2, which stores the integer value of 64.
 # The #pred method evaluates the variable and then returns predecessor of the integer in question (64).
 # 63 will be returned.
 # No argument is passed.
 check_num_2 = 64
-check_num_2.pred
-
+result_b = check_num_2.pred
+puts result_b
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
@@ -135,7 +136,10 @@ array_2 = [67, 45, 83, 92]
 # The #compact method is called on array_1, which returns a copy of itself with the nil elements removed.
 # => [1, 2, 3, 4]
 # No arguments are passed.
-["array_1"].compact
+x = array_1.compact()    # So the return value here is nil?
+puts "#{x}"
 
-# The #fetch method is called on array_2, which takes the argument 2 and returns the second element in the array => 45.
-array_2.fetch(2)
+# The #fetch method is called on array_2, which takes the argument 1 and returns the second element in the array => 45.
+# The argument of (1) is passed in order to retrieve the (2nd) element which is located at the 1st indexed position.
+array_result_2 = array_2.fetch(1)
+puts array_result_2
