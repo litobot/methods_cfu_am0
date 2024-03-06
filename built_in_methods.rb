@@ -108,13 +108,16 @@ puts hello.concat("world")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
-# The #integer? method is called on the integer 1987, which checks to see if it is an integer.
+# The #integer? method is called on the variable check_num_1, which stores the integer value of 1987
+# The #integer? method then evaluates variable to see if what it stores is in fact an integer.
 # No argument is passed.
 # It will return a value of "true".
 check_num_1 = 1987
-check_num_1.integer?
+check_num_1.integer?  # Sorry, Artemy.  I was just having a total brain fart on this stuff.
 
-# The #pred method is called on the integer 64, which returns the predecessor of the integer 64 which is 63.
+# The #pred method is called on the variable check_num_2, which stores the integer value of 64.
+# The #pred method evaluates the variable and then returns predecessor of the integer in question (64).
+# 63 will be returned.
 # No argument is passed.
 check_num_2 = 64
 check_num_2.pred
