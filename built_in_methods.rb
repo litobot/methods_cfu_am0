@@ -137,7 +137,7 @@ array_2 = [67, 45, 83, 92]
 # => [1, 2, 3, 4]
 # No arguments are passed.
 x = array_1.compact()    # So the return value here is nil?
-puts "#{x}"
+p x
 
 # The #fetch method is called on array_2, which takes the argument 1 and returns the second element in the array => 45.
 # The argument of (1) is passed in order to retrieve the (2nd) element which is located at the 1st indexed position.
